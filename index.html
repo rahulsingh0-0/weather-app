@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&family=PT+Sans&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>ACCuWeather</title>
+    <script defer src="./index.jsx"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-4 info">
+          <div class="adjust">
+            <img class="logo" src="imgs/icon.png" />
+            <input
+              id="search-bar"
+              type="search"
+              placeholder="Enter City name with Country"
+            />
+            <button type="button" id="button" class="btn btn-dark">Get</button>
+          </div>
+          <div class="info-data">
+            <div class="area">
+              <h4>Khopoli,IN</h4>
+              <img
+                class="logo"
+                src="./imgs/15-155040_weather-icon-weather.png"
+              />
+            </div>
+
+            <div class="adjust1">
+              <h5>🔥 Temp:78C</h5>
+              <h5>🌄 Humidity:34</h5>
+            </div>
+            <div class="adjust2">
+              <h5>🌫 Wind speed:5 km/hr</h5>
+              <h5>☁ Description:Haze</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
