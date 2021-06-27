@@ -1,0 +1,126 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0%;
+  padding: 0%;
+  font-family: Ubuntu;
+  letter-spacing: 1px;
+  line-height: 5px;
+}
+.logo {
+  height: 35px;
+  width: auto;
+  border-radius: 70%;
+  position: relative;
+  bottom: 8px;
+  right: 8px;
+}
+
+.adjust {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 10%;
+}
+.info {
+  height: 100vh;
+  width: 40vw;
+  background: whitesmoke;
+}
+
+#button,
+#button2 {
+  width: 25%;
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: black;
+  /* background-color: linear-gradient(to right, #314755, #3a53df); */
+}
+#search-bar {
+  width: 60%;
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+#map {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  background-color: #aaa;
+}
+.info-data {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  background-color: whitesmoke;
+  display: none;
+  /* margin: 7% */
+  height: 50%;
+  width: 70%;
+  border-radius: 7px;
+  padding-top: 20px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(71, 61, 61, 0.5) -3px -3px 6px 1px inset;
+}
+
+h4 {
+  text-decoration: 2px underline solid black;
+  font-size: 35px;
+}
+h6 {
+  text-align: right;
+  position: relative;
+  right: 30px;
+}
+.area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(71, 61, 61, 0.5) -3px -3px 6px 1px inset;
+  padding-top: 20px;
+}
+.note {
+  font-size: 12px;
+  position: absolute;
+  top: 19%;
+  color: red;
+}
+.adjust2,
+.adjust1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  flex-direction: column;
+}
+h5 {
+  text-align: left;
+}
+.fa-sun {
+  color: yellow;
+  font-size: 40px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  .info {
+    background-color: rgb(19, 17, 17);
+  }
+  #button,
+  #button2 {
+    background-color: white;
+    color: black;
+  }
+}
+
